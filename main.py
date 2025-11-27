@@ -6,8 +6,13 @@ def main():
     total_rounds = throw_dice(2)
     print(f'Wir spielen {total_rounds} Runden')
     round = 1
-    while (round < total_rounds ):
-        round+=1
+    # while (round < total_rounds ):
+    #     # play one round
+    #     player = 1
+    #     while (player < 2):
+    #         # one player plays his round
+    #         pass
+    #     round+=1
 
 
 def throw_dice(number):
