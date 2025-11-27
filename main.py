@@ -2,7 +2,7 @@ import random
 
 
 def main():
-    DICE_COUNT = 1
+    DICE_COUNT = 2
     PLAYER_COUNT = 2
     show_welcome()
     dices = throw_dice(DICE_COUNT)
@@ -26,7 +26,7 @@ def main():
                 player_totals[player] += points
                 print(f'  Du hast nun Total {player_totals[player]} Punkte')
             player += 1
-        round += 1
+        #round += 1
     show_winner(player_totals)
 
 def player_round():
@@ -41,7 +41,7 @@ def player_round():
             return 0
         else:
             round_points += dices[0] + dices[1]
-            print(f'  Dein Total für diese Runde ist {round_points}', end=' ')
+            print(f'  Du hast {round_points} Punkte in dieser Runde.', end=' ')
             again = input('Willst du nochmal würfeln? (Y/n)? ')
             if again.lower() == 'n':
                 return round_points
@@ -70,6 +70,7 @@ def show_winner(totals):
     winner = 0
     highest = -1
     index = 0
+    print ('\n---------------------------------')
     for total in totals:
         print (f'Spieler {index+1} hat {total} Punkte erreicht')
         if total > highest:
@@ -88,7 +89,7 @@ def show_welcome():
     choice = input('Willst du die Regeln lesen (y/N)? ')
     if choice.lower() == 'y':
         print('************************************************')
-        print('Regeln blabla')
+        print('Regeln Erklärbär')
         print('************************************************')
 
 
