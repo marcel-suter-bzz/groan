@@ -30,7 +30,7 @@ def show_welcome():
     :return:
     """
     print('Willkommen zu Groan! Ein taktisches Würfelspiel für 2 Spieler')
-    choice = input('Willst du die Regeln lesen (y/N)')
+    choice = input('Willst du die Regeln lesen (y/N)? ')
     if choice.lower() == 'y':
         print ('Regeln blabla')
 
