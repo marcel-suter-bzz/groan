@@ -18,7 +18,7 @@ def main():
         print('+----------+')
         player = 0
         while (player < PLAYER_COUNT):
-            print(f'\nSpieler {player + 1} du bist dran')
+            print(f'\nSpieler {player + 1} du bist an der Reihe')
             points = player_round()
             if points == -1:
                 print('  Oh nein! Du hast alle Punkte verloren')
